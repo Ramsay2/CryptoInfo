@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coin_nav"
+    app:startDestination="@id/coinsFragment">
+
+    <fragment
+        android:id="@+id/coinsFragment"
+        android:name="com.ramsay.cryptoInfo.views.CoinsFragment"
+        android:label="CoinsFragment" >
+        <action
+            android:id="@+id/action_coinsFragment_to_watchListFragment"
+            app:destination="@id/watchListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/watchListFragment"
+        android:name="com.ramsay.cryptoInfo.views.WatchListFragment"
+        android:label="WatchListFragment" >
+        <action
+            android:id="@+id/action_watchListFragment_to_coinsFragment"
+            app:destination="@id/coinsFragment" />
+    </fragment>
+</navigation>

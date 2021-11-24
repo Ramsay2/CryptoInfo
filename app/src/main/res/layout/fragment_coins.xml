@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".views.CoinsFragment">
+        <LinearLayout
+            android:id="@+id/layoutProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center">
+            <ProgressBar
+                android:id="@+id/progress_Bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate = "true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="3dp">
+
+            <EditText
+                android:id="@+id/etCoinSearchBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:hint="Search..." />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!--  <androidx.appcompat.widget.SearchView
+              android:id="@+id/etCoinSearchBar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="18dp"
+              android:background="@drawable/search_background"
+              android:hint="Search food"
+              android:importantForAutofill="no"
+              android:inputType="text"
+              android:textColorHint="#546E7A"
+              android:textSize="15sp"
+              app:drawableStartCompat="@drawable/ic_search_24"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_filter_list_24" />
+        -->
+
+
+        <!--  </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+        <!-- <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/recyclerview"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/recyclerviewSearch"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:visibility="gone"/>-->
+
+
+    </LinearLayout>
+
+</layout>
