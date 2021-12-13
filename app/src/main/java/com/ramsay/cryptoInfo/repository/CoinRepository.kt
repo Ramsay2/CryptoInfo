@@ -7,7 +7,6 @@ import com.ramsay.cryptoInfo.models.Network
 import com.ramsay.cryptoInfo.models.local.Coins
 import com.ramsay.cryptoInfo.models.local.CoinsDAO
 import com.ramsay.cryptoInfo.models.response.CoinInfoDTO
-
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observable
 import kotlinx.coroutines.CoroutineScope
@@ -97,7 +96,5 @@ class CoinRepository @Inject constructor(val coinDao: CoinsDAO) {
         }
 
     }
-
-
 
 }

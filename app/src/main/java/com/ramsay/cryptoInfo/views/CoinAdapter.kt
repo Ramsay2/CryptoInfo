@@ -16,7 +16,7 @@ import com.ramsay.cryptoInfo.databinding.ItemLayoutBinding
 import com.ramsay.cryptoInfo.models.local.Coins
 
 
-class CoinAdapter(private val context: Context, private var coinList: MutableList<Coins>) :
+ class CoinAdapter(private val context: Context, private var coinList: MutableList<Coins>) :
     RecyclerView.Adapter<CoinAdapter.CoinViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CoinViewHolder {
@@ -37,6 +37,7 @@ class CoinAdapter(private val context: Context, private var coinList: MutableLis
             Log.d("TAG12345", "onBindViewHolder: 1234566")
             holder.itemView.context.startActivity(intent)
         }
+        Log.d("TAG56789", holder.getData(coin).toString())
         holder.getData(coin)
     }
 

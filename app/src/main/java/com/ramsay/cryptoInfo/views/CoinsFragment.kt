@@ -71,10 +71,7 @@ class CoinsFragment : Fragment(), SearchItemClicked {
                 search()
                 coinAdapter.notifyDataSetChanged()
             }
-
-
         })
-
 
     }
 

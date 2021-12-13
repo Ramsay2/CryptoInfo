@@ -18,6 +18,8 @@ class CoinViewModels @Inject constructor( val coinRepository: CoinRepository):Vi
     fun getCoinFromApi(){
         coinRepository.getRemoteCoin()
     }
+
+
     fun getCoinFromDB(): LiveData<List<Coins>> {
       return coinRepository.getAllCoins()
     }
@@ -35,3 +37,4 @@ class CoinViewModels @Inject constructor( val coinRepository: CoinRepository):Vi
         }
     }
 }
+
